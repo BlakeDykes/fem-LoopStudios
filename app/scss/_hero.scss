@@ -1,0 +1,21 @@
+.hero{
+    position: aboslute;
+    height: 40.625rem;
+    width: 100%;
+    top: 0;
+    background-image:url("/app/images/mobile/image-hero.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+    @include breakpoint-up(medium){
+        background-image:url("/app/images/desktop/image-hero.jpg");
+        background-position-x: -500px;
+        background-size:cover;
+    }
+
+    @include breakpoint-up(large){
+        background-image:url("/app/images/desktop/image-hero.jpg");
+        background-size:cover;
+        background-position-x: center;
+    }
+}

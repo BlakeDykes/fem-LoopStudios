@@ -1,0 +1,23 @@
+.nav{
+    
+
+    &.desktop{
+        float:right;
+        color:white;
+        display:inline-block;
+        right:0;
+
+        @include breakpoint-down(large){
+            display:none;
+        }
+
+        .nav__item{
+            display:inline-block;
+            padding-left:20px;
+        }
+    }
+
+    &.mobile{
+
+    }
+}
