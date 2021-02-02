@@ -3,19 +3,61 @@
     height: 40.625rem;
     width: 100%;
     top: 0;
-    background-image:url("/app/images/mobile/image-hero.jpg");
+    background-image:url("/images/mobile/image-hero.jpg");
     background-size:cover;
     background-repeat:no-repeat;
+    background-position:center;
+    margin-bottom: 95px;
     
-    @include breakpoint-up(medium){
-        background-image:url("/app/images/desktop/image-hero.jpg");
-        background-position-x: -500px;
-        background-size:cover;
+    @include breakpoint-up(large){
+        margin-bottom: 165px;
     }
 
-    @include breakpoint-up(large){
-        background-image:url("/app/images/desktop/image-hero.jpg");
+    .banner{
+
+        height:280px;
+        width:100%;
+
+        &__content{
+            z-index: 0;
+            width: 98%;
+            max-width: 650px;
+            height:280px;
+            display:block;
+            box-sizing: border-box;
+            border: 2px solid white;
+            position:absolute;
+            text-transform:uppercase;
+            font-size: 70px;
+            text-align: left;
+            font-weight:300;
+            color:white;
+            font-family:$Josefin;
+            left: 10.3rem;
+            padding:40px;
+            margin:0;
+            cursor: default;
+
+            @include breakpoint-down(medium){
+                left:0;
+                left:50%;
+                transform:translate(-50%);
+            }
+
+            @include breakpoint-down(small){
+                padding: 25px;
+                height: 208px;
+                font-size: 40px;
+                max-width: 330px;
+            }
+        }
+
+        
+    }
+
+    @include breakpoint-up(medium){
+        background-image:url("/images/desktop/image-hero.jpg");
         background-size:cover;
-        background-position-x: center;
+        background-position: center;
     }
 }

@@ -1,0 +1,34 @@
+.lead__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    .lead__pic{ 
+        width: 100%; 
+        padding-bottom: 50px; 
+        >img{
+            width: 100%;
+        }
+    }
+
+    .lead__text{
+        
+        padding-left: 26.5px;
+        padding-right: 26.5px;
+        text-align:center;
+
+        >h2{
+            font-family:$Josefin;
+            font-size: $font-lg;
+            text-transform:uppercase;
+            text-align:center;
+            padding-bottom: 20px;
+            font-weight:600;
+        }
+
+        >p{
+            font-size: $font-med;
+            font-family: $Alata;
+            color: $darkGray;
+        }
+    }
+}
