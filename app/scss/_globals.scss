@@ -1,18 +1,38 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 body{
-    
-    font-family: 'Alata', sans-serif;
+    font-family: $Alata;
     font-weight:400;
-    font-size:$font-med;
+    font-size: $font-med;
     justify-content: center;
     width:100%;
     margin:0;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+ //Links
+ a:link, a:focus, a:visited, a:focus, a:active{
+    text-decoration:none;
+    color: white;
 }
 
 .attribution{
     position:absolute;
-    bottom: 0;
+    bottom: 5px;
     font-size:$font-sm;
+    left: 50%;
+    transform:translate(-50%);
+    color: black;
+    a:link, a:visited, a:hover{
+        color: red;
+    }
 }
 
 .container{
@@ -21,7 +41,7 @@ body{
     padding-right:1.5rem;
     padding-top: 2.5rem;
 
-    @include breakpoint-up(xlarge){
+    @include breakpoint-up(large){
         width:calc(100%-20.6rem);
         padding-left:10.3rem;
         padding-right:10.3rem;

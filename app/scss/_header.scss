@@ -1,29 +1,35 @@
 .header{
+
+    padding-bottom:164px;
     
     .logo{
+        position:absolute;
         width: 115px;
         height: auto;
-
-        @include breakpoint-up(xlarge){
+        z-index: 2;
+        
+        @include breakpoint-up(large){
             width: 200px;
         }
     }
 
-    .icon{
+    .burger__icon{
 
         position: absolute;
-        display:inline-block;
+        display:inline-flex;
         width: 1.5625rem;
         height: 0.875rem;
         right: 1.5rem;
         top: 2.8125rem;
         cursor: pointer;
+        
 
-        @include breakpoint-up(xlarge){
+        @include breakpoint-up(large){
             display:none;
         }
 
         .burger{
+            z-index: 1;
             position:absolute;
             width: 1.5625rem;
             height: .125rem;
