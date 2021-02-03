@@ -23,6 +23,11 @@ body{
     color: white;
 }
 
+a:hover{
+    background-color: gray;
+    transition: background-color ease-in-out 300ms;
+}
+
 .attribution{
     position:absolute;
     bottom: 5px;
@@ -48,3 +53,35 @@ body{
         padding-top:4rem;
     }
 }
+
+.grid__container{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    height:100%;
+}
+
+h2{
+    font-family:$Josefin;
+    font-size: $font-xlg;
+    text-transform:uppercase;
+    font-weight:550;
+    display: inline-block;
+
+    @include breakpoint-down(medium){
+            font-size:$font-lg;
+    }
+}
+
+.filter{
+    &__black{
+            position:absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, .5) 15%, rgba(0, 0, 0, 0) 100%);
+            background-size:cover;
+    }
+}
+

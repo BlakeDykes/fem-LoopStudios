@@ -31,7 +31,7 @@
 
         @include breakpoint-down(medium){ 
             
-            transition: ease-in-out 300ms;
+            transition: ease-in-out 200ms;
             display:flex;
             position:absolute;
             padding:0;
@@ -59,7 +59,7 @@
             }
 
             &.close{
-                top: -61rem;
+                top: -70rem;
             }
             
             
