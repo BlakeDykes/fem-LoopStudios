@@ -1,0 +1,118 @@
+.footer{
+
+    padding-top:45px;
+    width:100%;
+    height:160px;
+    background-color: black;
+
+    .grid__container{
+        flex-direction:row;
+
+        @include breakpoint-down(medium){
+            flex-direction:column;
+        }
+    }
+
+    @include breakpoint-down(medium){
+        height: 500px;
+    }
+
+    &__grid__nav{
+        display:grid;
+        width: 50%;
+        height:100%;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr;
+
+        @include breakpoint-down(medium){
+            width:100%;
+            height:auto;
+            grid-template-rows:auto auto;
+            justify-items: center;
+        }
+
+        .footer__nav{
+            display:flex;
+            flex-direction: row;
+
+            @include breakpoint-down(medium){
+                flex-direction:column;
+                align-items:center;
+            }
+
+            
+            .nav__item{
+                
+                padding-right:30px;
+                @include breakpoint-down(medium){
+                    padding-right:0;
+                    padding-top:40px;
+
+                    &:not(:first-child){
+                        padding-top:30px;
+                    }
+                   }
+            }
+        }
+    }
+
+    &__grid__social{
+        display:grid;
+        width: 50%;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr;
+        justify-content:right;
+
+        @include breakpoint-down(medium){
+            width:100%;
+            height:50%;
+        }
+        
+    }
+
+    &__icons{
+        display:flex;
+        justify-content:flex-end;
+        
+        width:100%;
+        height:auto;
+
+        @include breakpoint-down(medium){
+            padding-top: 50px;
+            justify-content: center;
+        }
+        a.social__link{
+
+            &:not(:first-child){
+                padding-left:25px;
+                
+                @include breakpoint-down(medium){
+                    padding-left: 15px;
+                }
+            }
+        }
+        
+        
+        >img{
+            
+            width:25px;
+            height:25px;
+        }
+    }
+    
+    .copyright{
+        display:flex;
+        justify-content: flex-end;
+        width:100%;
+        height:auto;
+
+        @include breakpoint-down(medium){
+            justify-content:center;
+            padding-top: 12px;
+        }
+
+        >p{
+            color:$veryDarkGray;
+        }
+    }
+}
