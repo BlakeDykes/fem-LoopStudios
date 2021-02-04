@@ -127,15 +127,16 @@
                 left: 41px;
 
                 >h3{
-                font-family: $Josefin;
-                font-weight: 200;
-                font-size:1.9rem;
-                color: white;
-                text-transform: uppercase;
+                    transition: color ease-in-out 200ms;
+                    font-family: $Josefin;
+                    font-weight: 200;
+                    font-size:1.9rem;
+                    color: white;
+                    text-transform: uppercase;
 
-                @include breakpoint-down(small){
-                    font-size:$font-lg;
-                }
+                    @include breakpoint-down(small){
+                        font-size:$font-lg;
+                    }
                 }
 
                 @include breakpoint-down(large){
