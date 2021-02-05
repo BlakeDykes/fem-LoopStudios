@@ -12,6 +12,7 @@
     
     &__header{
 
+        animation-name:fadeInLeft;
         max-width: 1150px;
         display: flex;
         flex-flow:row;
@@ -94,6 +95,7 @@
 
         &__item{
 
+            animation-name:fadeInUp;
             position: relative;
 
             &__pic{
