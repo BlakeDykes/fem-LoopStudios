@@ -1,0 +1,12 @@
+{
+    "name": "fem-loopstudios",
+    "description": "Front End Mentor challenge to create a landing page for LoopStudios",
+    "main": "index.html",
+    "scripts": {},
+    "author": "Blake Dykes",
+    "license": "N/A",
+    "dependencies": {
+        "animate.css": "^4.1.1",
+        "wow.js": "^1.2.2"
+    }
+}

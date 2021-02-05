@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smoot;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -27,12 +31,18 @@ a:link, a:focus, a:visited, a:focus, a:active {
 
 .attribution {
   position: absolute;
-  bottom: 5px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 0.75rem;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: black;
 }
 
 .attribution a:link, .attribution a:visited, .attribution a:hover {
@@ -103,6 +113,8 @@ h2 {
 
 .header {
   padding-bottom: 164px;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
 }
 
 .header .logo {
@@ -286,6 +298,8 @@ h2 {
 .hero .banner {
   height: 280px;
   width: 100%;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
 }
 
 .hero .banner__content {
@@ -350,6 +364,8 @@ h2 {
 }
 
 .lead__grid .lead__pic {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
   max-width: 721px;
   width: 100%;
   -ms-grid-column: 1;
@@ -363,6 +379,8 @@ h2 {
 }
 
 .lead__grid .lead__text {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,6 +484,8 @@ h2 {
 }
 
 .creations__header {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
   max-width: 1150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -567,6 +587,8 @@ h2 {
 }
 
 .creations__grid__item {
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
   position: relative;
 }
 

@@ -10,7 +10,7 @@
     justify-items:center;
 
     .lead__pic{
-        
+        animation-name:fadeInLeft;
         max-width:721px;
         width: 100%;
         grid-column-start: 1;
@@ -23,6 +23,7 @@
 
     .lead__text{
         
+        animation-name:fadeInRight;
         display:flex;
         grid-column-start:2;
         grid-column-end:end;

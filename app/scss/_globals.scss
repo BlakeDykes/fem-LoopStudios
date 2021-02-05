@@ -1,3 +1,7 @@
+html{
+    scroll-behavior:smoot;
+}
+
 *, *::before, *::after{
     box-sizing: border-box;
     padding: 0;
@@ -26,14 +30,17 @@ body{
 
 .attribution{
     position:absolute;
-    bottom: 5px;
+    left:0;
+    display:flex;
     font-size:$font-sm;
-    left: 50%;
-    transform:translate(-50%);
-    color: black;
+    font-family: $Josefin;
+    width: 100%;
+    justify-content: center;
+    color: white;
     a:link, a:visited, a:hover{
         color: red;
     }
+    background-color: black;
 }
 
 .container{
@@ -87,5 +94,4 @@ h2{
         }
     }
 }
-
 
